@@ -89,7 +89,7 @@ def run_test2(questions2)
     puts "\e[H\e[2J"
     puts ("\nYou got " + @score2.to_s + "/" + questions2.length().to_s)
       if @score2 >= 2
-        puts "\nYou're doing well so far, " + @name + "! Don't get cocky. Here comes part 3."
+        puts "\nYou're doing well so far, " + @name + "!\nDon't get cocky. Here comes part 3 where we'll test your personality."
         sleep(5)
       else puts "\nVocabulary isn't your strong suit, " + @name + ".\nLet's look at your personality instead."
         sleep(5)
@@ -122,12 +122,14 @@ def final_score
 puts "\e[H\e[2J"
   total = @score + @score2 + @score
   if total <=3
-    puts "Spoken languages aren't really your thing.\n\nBut, if you are truly motivated to learn a language, anyone can do it!\n\nOhe of the easiest way for your to learn a new language would be to fall in love with a foreigner."
-  elsif total == 4 or 5 or 6
+    puts "Spoken languages aren't really your thing.\n\nBut, if you are truly motivated to learn a language, anyone can do it!\n\nOne of the easiest way for your to learn a new language would be to fall in love with a foreigner."
+  elsif total == 3<7
     puts "You have the makings of a true linguist.\n\nIf you want to learn another language, find a culture and place that attracts you and motivates you."
-  else puts "You have a natural talent for languages.\nHowever, motivation is truly the key to learning a new language.\n\nIf you want to learn another language, find a culture and place that attracts you and motivates you."
+  else
+    puts "You have a natural talent for languages.\nHowever, motivation is truly the key to learning a new language.\n\nIf you want to learn another language, find a culture and place that attracts you and motivates you."
   end
 end
+
 
 welcome
 run_test(questions)
